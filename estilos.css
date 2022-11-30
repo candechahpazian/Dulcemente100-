@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+
+}
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"navbar" 200px
+	"main"	auto
+	"footer" 100px;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+
+}
+.header{
+	grid-area: header;
+}
+.logoheader{
+	margin-top: 0.15cm;
+    margin-bottom: 10%;
+	width: 90%;
+	height: auto;
+    display: block;
+    margin: 0px auto;
+	transition: all 0,5s;
+}
+.logoheader:hover{
+	transform: scale(1.1);
+}
+.algodon:hover{
+	transform: scale(1.1);
+}
+.selva:hover{
+	transform: scale(1.1);
+}
+.malvavisco:hover{
+	transform: scale(1.1);
+}
+.gomitas:hover{
+	transform: scale(1.1);
+}
+
+.navbar{
+	grid-area: navbar;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+.pagina{
+	font-family:'Fredoka', sans-serif;;
+	text-decoration: none;
+	color: #ffffff;
+	border: 1cm;
+	background-color: #aad4ff;
+	padding: 0.45cm;
+	border-radius: 1cm;
+}
+.pagina:hover{
+	color: #ffffff;
+	background-color: #54a9f9;
+}
+.main{
+	grid-area: main;
+	font-family: 'Urbanist';
+	font-size: 1.15em;
+	display: grid;
+	grid-template: 
+	"banner" 1fr
+	"producto"  auto /
+	100%;
+}
+.banner{
+	grid-area: banner;
+	margin-top: 0.5cm;
+	display: grid;
+}
+.banner img{
+	width: 100%;
+	grid-area: foto;
+}
+.producto{
+	grid-area: producto;
+	display: grid;
+	grid-template: 
+	"productotitulo" 85px
+	"algodon" 350px
+	"texto1" 70px
+	"gomitas" 350px
+	"texto2" 70px
+	"malvavisco" 350px
+	"texto3" 70px
+	"selva" 350px
+	"texto4" 70px /
+	1fr		;
+	margin-bottom: 1cm;
+    
+}
+.producto img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #ffaada
+}
+.productotitulo{
+	font-family:'Fredoka', sans-serif;
+	color: #aad4ff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 0.5cm;
+}
+.fotoproducto{
+	height: 175px;
+}
+.algodon{
+	grid-area: algodon;
+	transition: all 0,5s;
+}
+.gomitas{
+	grid-area: gomitas;
+	transition: all 0,5s;
+}
+.malvavisco{
+	grid-area: malvavisco;
+	transition: all 0,5s;
+}
+.selva{
+	grid-area: selva;
+	transition: all 0,5s;
+}
+h3 {
+    color: #524797;
+    font-family: 'Fredoka', sans-serif;
+	font-size: 30px;
+}
+.footer{
+	grid-area: footer;
+	display: grid;
+	grid-template: 
+	"logo	links" 1fr /
+	300px	auto;
+	align-items: center;
+	justify-items: end;
+	align-content: center;
+	border-top:#a2f8ba solid 0.09cm ;
+	background-color: #ffffff;
+}
+.logof{
+	grid-area: logo;
+	width: 100%;
+	height: auto;
+}
+.links{
+	grid-area: links;
+    float: right;
+
+}
+.redes1{
+	width: 15%;
+	height: 10%;
+	margin-right: 2rem;
+}
+.redes2{
+	width: 15%;
+	height: 10%;
+	margin-right: 2rem;
+}
+.logof{
+	float: left;
+	width: 70%;
+	height: 70%;
+}
+.red1{
+	width: 57,75px;
+}
+.productos img {
+border-radius: 400px;
+width: 50%;
+}
+.t1, .t2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.bingbong {
+	transition: all (0,5s);
+}
+.bingbong:hover {
+	transform: scale(1.1);
+}
+.field{
+	border: solid 1px #ccc;
+	padding: 10px;
+	width: 500px;	
+	margin-top: 10px;
+	margin-bottom: 1rem;
+}
+.field:hover{
+	border-color: #aad4ff;
+}
+.formulario{
+	text-align: center;
+	margin: 2rem;
+	font-family: 'Fredoka', sans-serif;
+}
+button{
+	color: white;
+	background-color:#ffaada;
+	border-color:#FFE0E0;
+	font-family: 'Fredoka', sans-serif;
+	height: 25px;
+	width: 100px;
+}
+button:hover {
+	color: #d257a5;;
+}
+.intro{
+	height: fit-content;
+   background-color: #ffaada;
+   text-align: justify;
+   box-shadow: #000000;
+}
+.intro p{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.intro h1 {
+	text-align: center;
+}
+
+.container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	min-height: 75vh;
+  }
+
+  .elementoCarousel {
+	display: none;
+  }
+  
+  .prev, .next {
+	position: absolute;
+	cursor: pointer;
+	top: 30%;
+	width: auto;
+	margin-top: 0px;
+	padding: 16px;
+	color: rgb(252, 132, 234);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  .prev {
+	  left: 0%;
+  }
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+	background-color: rgba(250, 185, 250, 0.8);
+  }
+
+  .numbertext {
+	color: #000000;
+	font-size: 12px;
+	padding: 8px 12px;
+	top: 0;
+	float: left;
+  }
+
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	bottom: 100%;
+	position: relative;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  #myBtn {
+	display: none; 
+  }
+
+h1 {
+	font-family:'Fredoka', sans-serif;
+	color: #FF6BAA;
+}
+
+.mix {
+	background-color: #aad4ff;
+	height: fit-content;
+	width: 80%;
+}
+.mix a {
+	text-decoration: none;
+	color: #000000;
+}
+.mix a:hover {
+	color: #FF6BAA;
+}
+.gif {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.grid_container{
+		grid-template: 
+		"header 	navbar" 	100px 
+		"main	 	main" 		auto
+		"footer 	footer" 	100px /
+		200px 		auto;
+	}
+    .logoheader{
+        width: 100%;
+		margin-left: 10%;
+    }
+   
+	.main{
+		font-size: 1.5em;
+	}
+    .banner {
+        width: auto;
+        height: 10%;
+    }
+	.producto{
+		grid-area: producto;
+		display: grid;
+		grid-template: 
+		"productotitulo	productotitulo" 200px
+		"algodon	gomitas" 300px
+		"texto1		texto2" 100px
+		"malvavisco	selva" 300px
+		"texto3		texto4" 100px /
+		1fr			1fr;
+		margin-bottom: 1cm;
+	}
+	.productotitulo {
+		width: 100%;
+	}
+	.navbar{
+		margin-left: 3cm;
+	}
+    .redes1, .redes2{
+        float: right;
+		width: 3rem;
+		height: 3rem;
+		margin-right: 2rem;
+    }
+	.bingbong {
+		width: 2em;
+		float: left;
+		left: 100%;
+	}
+	.intro {
+		position: absolute;
+		width: 40%;
+		right: 5%;
+		height: 40%;
+	}
+	.intro p{
+		font-size: 20px;
+	}
+	.container {
+		max-width: 70%;
+		position: absolute;
+		margin-left: 15%;
+		min-height: 0px;
+		bottom: 0%;
+	  }
+	  .prev, .next {
+		position: absolute;
+		top: 50%;
+	  }
+	  .prev {
+		  left: 0%;
+	  }
+	  .t1 {
+		position: absolute;
+		float: left;
+		height: 2cm;
+		width: 10cm;
+	  }
+	  .t2 {
+		height: 2cm;
+		width: 10cm;
+		text-align: right;
+		float: right;
+	  }
+	  .productos{
+		display: flex;
+		flex-wrap: non-wrap;
+		margin-left: 4rem;
+	}
+	.productos img {
+		width: 200px;
+		margin-top: 4rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.mix {
+		margin-top: 4rem;
+	}
+	.field{
+		padding: 10px;
+		width: 500px;	
+	}
+
+	.formulario{
+		text-align: center;
+		margin: 2rem;
+		font-family: 'Fredoka', sans-serif;
+	}
+
+}
+
+
+@media (min-width: 992px) and (max-width:1199px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	navbar		navbar" 	100px
+		"main	 	main 	main		main" 		auto
+		"footer 	footer 	footer		footer" 	80px /
+		1fr 		1fr 	1fr			1fr;
+	}
+    .logoheader{
+        width: 50%;
+		float: left;
+		margin-left: 10%;
+    }
+	.logoheader :hover{
+		transform: scale(1.1);}
+
+    .pagina {
+        text-align: right;
+    }
+	.main{
+		font-size: 1.525em;
+	}
+    .banner {
+        height: 10%;
+    }
+	
+	.producto{
+		grid-area: producto;
+		display: grid;
+		grid-template: 
+		"titulo		titulo		titulo		titulo" 85px
+		"algodon	gomitas		malvavisco	selva" 500px
+		"texto		texto		texto		texto" 70px /
+		1fr			1fr			1fr			1fr	;
+		margin-bottom: 1cm;
+	}
+	.productotitulo{
+		grid-area: titulo;
+	}
+    .redes1{
+        float: right;
+        width: 5%;
+        height: 5%;
+    }
+    .redes2{
+        float: right;
+        width: 5%;
+        height: 5%;
+    }
+	.bingbong {
+		width: 2em;
+		float: left;
+		left: 100%;
+	}
+	.intro {
+		position: absolute;
+		width: 40%;
+		right: 5%;
+		height: 40%;
+	}
+	.container {
+		max-width: 70%;
+		position: absolute;
+		margin-left: 15%;
+		min-height: 0px;
+		bottom: 0%;
+	  }
+	  .prev, .next {
+		position: absolute;
+		top: 50%;
+	  }
+	  .prev {
+		  left: 0%;
+	  }
+	  .galeria, .galeria2 {
+		  display: flex;
+		  margin-left: 4rem;
+	  }
+	  .productos img {
+		  width: 200px;
+		  margin-top: 4rem;
+		  margin-left: 1rem;
+		  margin-right: 1rem;
+	  }
+	  .mix {
+		margin-top: 4rem;
+	}
+	  .field{
+		padding: 10px;
+		width: 100%;	
+		margin-top: 0px;
+		margin-bottom: 1rem;
+	}
+	  .formulario{
+		text-align: left;
+		margin-left: 3rem;
+		}
+
+	
+}
+@media (min-width:1200px) {
+	.grid_container{
+		width: 90%;
+		margin: auto;
+		grid-template: 
+		"header 	header 	navbar		navbar" 	100px
+		"main	 	main 	main		main" 		auto
+		"footer 	footer 	footer		footer" 	100px /
+		1fr 		1fr 	1fr			1fr;
+	}
+    .logoheader{
+        width: 30%;
+        float: left;
+    }
+	.logoheader :hover{
+		transform: scale(1.2);}
+    .banner {
+        width: auto;
+        height: 10%;
+    }
+	body{
+		text-align: center;
+		min-height: 100%;
+	
+	}
+	.main{
+		font-size: 1.55em;
+        grid-template:
+        "banner    banner    banner   banner" 100px
+        "banner    banner    banner   banner"  auto
+        "producto  producto  producto producto" auto/
+	    1fr       1fr      1fr      1fr;
+    } 
+	
+	.producto{
+		grid-area: producto;
+		display: grid;
+		grid-template: 
+		"titulo		titulo		titulo		titulo" 85px
+		"algodon    gomitas		malvavisco	selva" 175px
+		"texto		texto		texto		texto" 70px /
+		1fr			1fr			1fr			1fr	;
+		margin-bottom: 1cm;
+	}
+	.productotitulo{
+		grid-area: titulo;
+	}
+	.footer{
+		background-color: transparent;
+	}
+	.redes1{
+        float: right;
+        width: 5%;
+        height: 5%;
+    }
+    .redes2{
+        float: right;
+        width: 5%;
+        height: 5%;
+    }
+	.formulario{
+		position: absolute;
+		bottom: 0px;
+		text-align: left;
+		margin-left: 3rem;
+		margin-bottom: 0%;
+		}
+	.bingbong {
+		width: 2em;
+		float: left;
+		left: 100%;
+	}
+	.intro {
+		position: absolute;
+		width: 50%;
+		right: 5%;
+		height: 40%;
+	}
+	.container {
+		max-width: 60%;
+		position: absolute;
+		margin-left: 15%;
+		min-height: 0px;
+		top: 70%;
+	  }
+	.prev, .next {
+		position: absolute;
+		top: 50%;
+	  }
+	.prev {
+		  left: 0%;
+	  }
+	.galeria, .galeria2 {
+		display: flex;
+		flex-wrap: non-wrap;
+		margin-left: 4rem;
+	}
+	.t1, .t2 {
+		float: inline-start;
+		margin-top: 2rem;
+		
+	}
+	.productos img {
+		width: 200px;
+		margin-top: 2rem;
+		margin-left: 4rem;
+		margin-right: 1rem;
+	}
+	.formulario{
+		margin-bottom: 15%;
+		margin-left: 30%;
+		width: 50%;
+	}
+	.field{
+		width: 100%;
+	}
+	.mix {
+		grid-area: mix;
+		background-color: #aad4ff;
+		height: fit-content;
+		width: 100%;
+		text-align: justify;
+	}
+	.mix p {
+		font-size: 20px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.mix h2 {
+		text-align: center;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.gif {
+	float: right;
+	}
+	}

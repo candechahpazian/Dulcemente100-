@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Nosotros</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/ico" href="imagenes/favicon.ico">
+</head>
+
+
+<body class="grid_container">
+
+	<header class="header">
+		<a href="index.html"><img src="imagenes/logo.png" alt="Logo" class="logoheader"></a>
+	</header>
+	<nav class="navbar">
+		<a href="productos.html" class="pagina">PRODUCTOS</a>
+		<a href="sobrenosotros.html" class="pagina">NOSOTROS</a>
+        <a href="mix.html" class="pagina">NOVEDADES</a>
+	</nav>
+    <section class="main">
+        <div class="bingbong">
+            <img src="imagenes/bingbong.PNG" alt="bingbong">
+        </div>
+        <div class="intro">
+            <h1>Nuestra Historia</h1>
+            <p>Creé Dulcemente con el objetivo de poder transformar mis lagrimas de tristezas en gran alegrias para cualquier niño y persona que ame los dulces tanto como yo. Riley solía jugar conmigo en todo tipo de juegos cuando tenía 3 años. Sin embargo, se detuvo cuando ella tenía 4 años, y desde entonces, me quedé sin trabajo. Fue por eso que decidí dedicar todo mi amor en esta golosineria</p>
+        </div>
+    <div class="container">
+        <h1 class="staff">NUESTRO STAFF</h1>
+        <!-- Full-width images with number and caption text -->
+        <div class="elementoCarousel fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="imagenes/1.jpeg" style="width:100%">
+        </div>
+        <div class="elementoCarousel fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="imagenes/2.jpeg" style="width:100%">
+        </div>
+        <div class="elementoCarousel fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="imagenes/3.jpeg" style="width:100%">
+        </div>
+        <div class="elementoCarousel fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="imagenes/4.jpeg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="slideActual(1)"></span>
+            <span class="dot" onclick="slideActual(2)"></span>
+            <span class="dot" onclick="slideActual(3)"></span>
+            <span class="dot" onclick="slideActual(4)"></span>
+        </div>
+    </div>
+    
+    <div class="container">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    </div>
+</section> 
+
+    <script>
+        // Definir un índice y llamar a la función que muestra un slide
+        let indiceSlide = 1;
+        mostrarSlides(indiceSlide);
+
+        // Mover el slide a través de los controles previo y próximo (1, -1)
+        function plusSlides(numero) {
+            mostrarSlides(indiceSlide += numero);
+        }
+
+        // Mover el slide a través de los indicadores
+        function slideActual(numero) {
+            mostrarSlides(indiceSlide = numero);
+        }
+
+        function mostrarSlides(numero) {
+            // Obtener los elementos para operar con ellos
+            let slides = document.getElementsByClassName("elementoCarousel");
+            let indicadores = document.getElementsByClassName("dot");
+
+            // Validar "numero"
+            if (numero > slides.length) { indiceSlide = 1 }
+            if (numero < 1) { indiceSlide = slides.length }
+
+            // Iterar y ocultar los slides y el estilo de los indicadores
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < indicadores.length; i++) {
+                indicadores[i].className = indicadores[i].className.replace(" active", "");
+            }
+
+            // Mostrar el slide indicado con display block y agregarle el estilo al punto indicado
+            slides[indiceSlide - 1].style.display = "block";
+            indicadores[indiceSlide - 1].className += " active";
+        } 
+        </script>   
+
+    </body>
